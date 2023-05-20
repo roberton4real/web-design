@@ -7,6 +7,144 @@
   <title>New John's Portfolio</title>
   <link rel="stylesheet" href="home.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    /* Existing styles */
+
+    /* Global styles */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    .main-nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .main-nav a.active {
+      font-weight: bold;
+    }
+
+    /* Home Section styles */
+    .home {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .home h1 {
+      margin-bottom: 20px;
+    }
+
+    .home h3 {
+      font-weight: 300;
+    }
+
+    .multiText {
+      font-weight: bold;
+    }
+
+    .home p {
+      margin-bottom: 30px;
+    }
+
+    .btn-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .btn-box a {
+      margin-right: 20px;
+      padding: 10px 20px;
+      background-color: #000;
+      color: coral;;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-box a:hover {
+      background-color: #333;
+    }
+
+    /* Image styles */
+    .home-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .home-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    /* About Me Section styles */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .education,
+    .experience {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+      width: 70%;
+      max-width: 600px;
+    }
+
+    .education:hover,
+    .experience:hover {
+      background-color: #e6e6e6;
+      cursor: pointer;
+    }
+
+    .education-details,
+    .experience-details {
+      display: none;
+    }
+
+    .education:hover .education-details,
+    .experience:hover .experience-details {
+      display: block;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    /* Contact Me Section styles */
+    .contact {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .heading
+  </style>
 </head>
 <body>
   <header class="site-header">
