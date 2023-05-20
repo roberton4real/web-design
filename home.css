@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(26, 23, 23);
+    color: whitesmoke;
+}
+
+
+/* Header styles */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav a {
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+  color: #00abf0;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+
+  background-size: cover;
+  background-position: center;
+
+}
+
+.home-content h1 {
+  font-size: 45px;
+  font-weight: 700px;
+  line-height: 1.2;
+}
+
+.home-content h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: blanchedalmond;
+
+}
+.multiText {
+  color: coral;
+  text-transform: capitalize;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+  max-width: 600px;
+}
+
+.home-content .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height:50px;
+
+}
+
+.btn-box a {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  background-color: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  overflow: hidden;
+  z-index: -1;
+ 
+ }
+
+ .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.btn-box a {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  background-color: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.btn-box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: whitesmoke;
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn-box a:hover::before {
+  width: 100%; 
+}
+
+.btn-box a.hire-me {
+  background: transparent;
+  color: #00abf0;
+}
+
+.btn-box a.hire-me:hover {
+  background: transparent;
+  color: #00abf0;
+}
+
+.btn-box a.lets-talk {
+  background: transparent;
+  color: #00abf0;
+}
+
+.btn-box a.lets-talk:hover {
+  background: #081b29;
+  color: #00abf0;
+}
+
+.btn-box a.download-cv {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+
+  
+}
+
+.btn-box a.download-cv:hover {
+  background: #081b29;
+  color: #00abf0;
+}
+
+
+
+.home-img {
+  height: 100vh;
+  display: flex;
+  padding: 0 10%;
+  object-fit: cover;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border: 10px solid transparent; /* Replace with your desired border thickness and color */
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.home-img:hover {
+  transform: scale(1.1);
+}
+
+.education-row {
+  display: flex;
+}
+
+.education-column {
+  flex: 1;
+  padding: 0 10px;
+}
+#skills {
+  margin: 50px;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+#skillsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skillsList li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #f7f4f0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 220px;
+}
+
+.skill-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.skill-title .img {
+  margin-right: 10px;
+}
+
+.skill-title img {
+  width: 24px;
+  height: 24px;
+}
+
+.skill-title h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.skill-box p {
+  color: #666;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+  background-color: #081b29;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  }
+  
+  .form {
+  margin-top: 50px;
+  text-align: left;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .form-group {
+  margin-bottom: 20px;
+  }
+  
+  label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+  background-color: #0e304f;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+  }
+  
+  textarea {
+  height: 150px;
+  }
+  
+  input[type="submit"] {
+  background-color: #ffc107;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  }
+  
+  input[type="submit"]:hover {
+  background-color: #ffa000;
+  }
+  
+  ::-webkit-input-placeholder {
+  color: #fff;
+  }
+  
+  :-moz-placeholder {
+  color: #fff;
+  }
+  
+  ::-moz-placeholder {
+  color: #fff;
+  }
+  
+  :-ms-input-placeholder {
+  color: #fff;
+  }
+
+  

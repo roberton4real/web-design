@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New John's Portfolio</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="logo">New John Refuse</a>
+
+    <nav class="main-nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="home-content">
+      <h1>Bonjour</h1>
+      <h3>I'm a <span class="multiText">  </span></h3>
+
+      <p>Software Engineer Student at Western Governors University. 3 years experience as a DevOps Engineer. Experience in solving the typical problems and deployment operations required in different environments and supporting development. Proficient in research and development, as well as skilled in Strong written and verbal communication skills, particularly in technical presentations and representing at industry or domain events. Fluent in both English and French</p>
+
+      <div class="btn-box">
+        <a href="#portfolio">Hire me</a>
+        <a href="#contact">Let's Talk</a>
+      </div>
+    </div>   
+    <div class="home-img" id="home"> 
+      <img src="IMG_1410.PNG" alt="" width="400">
+    </div>    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typingEffect = new Typed(".multiText", {
+        strings : ["DevOps Engineer", "Cloud Engineer", "Software Engineer"], 
+        loop : true, 
+        typeSpeed : 100,
+        backSpeed : 80, 
+        backDelay : 1500,
+      });
+    </script> 
+  </section>
+<!--About me section-->
+<head>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .education,
+    .experience {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+      width: 70%;
+      max-width: 600px;
+    }
+    
+    .education:hover,
+    .experience:hover {
+      background-color: #e6e6e6;
+      cursor: pointer;
+    }
+    
+    .education-details,
+    .experience-details {
+      display: none;
+    }
+    
+    .education:hover .education-details,
+    .experience:hover .experience-details {
+      display: block;
+    }
+    
+    h1, h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="about">
+    <h1>My Journey!</h1>
+
+    <h2>Education</h2>
+    <div class="education">
+      <h3>Western Governors University</h3>
+      <p>Bachelor's Degree in Software Engineer</p>
+      <p>Year: 2022-2025</p>
+      <div class="education-details">
+        <p>Additional details about my education...</p>
+      </div>
+    </div>
+
+    <div class="education">
+      <h3>Cloud Engineering Diploma</h3>
+      <p>Engineering Diploma</p>
+      <p>Year: 2022-2023</p>
+      <div class="education-details">
+        <p>Additional details about my Cloud Engineering education...</p>
+      </div>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="experience">
+      <h3>MetaworldX - Co-op</h3>
+      <p>AWS Solutions Architect</p>
+      <p>Year: 2023-Present</p>
+      <div class="experience-details">
+        <p>Additional details about my experience at ABC Company...</p>
+      </div>
+    </div>
+
+    <div class="experience">
+      <h3>Freelance</h3>
+      <p>DevOps Engineer</p>
+      <p>Year: 2021-2023</p>
+      <div class="experience-details">
+        <p>Additional details about my experience at XYZ Corporation...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const educationSections = document.querySelectorAll('.education');
+    const experienceSections = document.querySelectorAll('.experience');
+
+    educationSections.forEach((section) => {
+      section.addEventListener('mouseover', () => {
+        section.style.backgroundColor = 'coral';
+      });
+
+      section.addEventListener('mouseout', () => {
+        section.style.backgroundColor = 'transparent';
+      });
+    });
+
+    experienceSections.forEach((section) => {
+      section.addEventListener('mouseover', () => {
+        section.style.backgroundColor = 'coral';
+      });
+
+      section.addEventListener('mouseout', () => {
+        section.style.backgroundColor = 'transparent';
+      });
+    });
+  </script>
+</body>
+
+ <!-- Portfolio Section-->
+
+
+
+  <!-- Newsletter-->
+  
+
+
+
+    <!-- Contact Me Section-->
+     <!-- Contact Me Section-->
+     <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+            <form action="#" method="POST" class="form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-group text-center">
+                <input type="submit" class="btn btn-primary" value="Send Message">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
