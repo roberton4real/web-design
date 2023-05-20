@@ -198,10 +198,6 @@ body {
   padding: 0 10%;
   object-fit: cover;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
   border: 10px solid transparent; /* Replace with your desired border thickness and color */
   transition: transform 0.3s ease-in-out;
 }
